@@ -55,3 +55,8 @@ def delete_task(request, task_id):
     task.delete()
     return redirect('home')
 # Create your views here.
+def home_ajax(request):
+    """
+    Page d'accueil AJAX
+    """
+    return render(request, 'tasks/home_ajax.html')
